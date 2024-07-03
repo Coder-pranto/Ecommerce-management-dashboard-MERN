@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { FaHome, FaUserTag, FaUsers, FaChevronDown, FaChevronUp } from 'react-icons/fa';
 import { GiClothes } from 'react-icons/gi';
@@ -53,6 +53,12 @@ const SideBar = () => {
           <Link to="/banner" className="flex items-center text-xl hover:bg-gray-700 p-2 rounded">
             <BiLandscape className="mr-2" />
             Banner
+          </Link>
+        </li>
+        <li>
+          <Link to="/notification" className="flex items-center text-xl hover:bg-gray-700 p-2 rounded">
+            <BiLandscape className="mr-2" />
+            Notification
           </Link>
         </li>
         <li>

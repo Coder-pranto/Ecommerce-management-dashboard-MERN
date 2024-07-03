@@ -15,6 +15,7 @@ import Customer from "../pages/Customer/Customer";
 import User from "../pages/User/User";
 import Order from "../pages/Order/Order";
 import AllUser from "../pages/User/AllUser";
+import Notification from "../pages/Notification/Notification";
 
 const router = createBrowserRouter([
   {
@@ -54,6 +55,10 @@ const router = createBrowserRouter([
       {
         path: "/banner",
         element: <ProtectedRoute element={<Banner />} />,
+      },
+      {
+        path: "/notification",
+        element: <ProtectedRoute element={<Notification />} />,
       },
       {
         path: "/vendor",

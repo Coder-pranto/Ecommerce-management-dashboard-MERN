@@ -31,7 +31,9 @@ const upload = multer({
 }).fields([
   { name: 'thumb_image', maxCount: 1 },
   { name: 'media', maxCount: 10 },
-  { name: 'banner_img', maxCount: 1 }, 
+  { name: 'banner_img', maxCount: 1 },
+  { name: 'greet_img', maxCount: 1 },
+
 ]); // Handling multiple files
 
 module.exports = upload;

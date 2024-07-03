@@ -11,6 +11,7 @@ const userRoute = require("./userRoute");
 const customerRoute =require('./customerRoute')
 const vendorRoute = require("./vendorRoute");
 const orderRoute = require("./orderRoute");
+const greetRoute = require("./greetRoute");
 
 router.use("/auth", authRoute);
 router.use("/categories", categoryRoute);
@@ -23,6 +24,7 @@ router.use("/user", userRoute);
 router.use("/customer", customerRoute);
 router.use("/vendor", vendorRoute);
 router.use("/orders", orderRoute);
+router.use("/greets", greetRoute);
 
 
 

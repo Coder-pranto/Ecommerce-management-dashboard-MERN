@@ -1,6 +1,5 @@
 import axios from 'axios';
 
-
 export const BASE_URL = 'http://localhost:4500/api/v1';
 
 const api = axios.create({
@@ -12,6 +11,17 @@ const getToken = () => {
   const token = localStorage.getItem('user_token');
   return token ? `Bearer ${token}` : '';
 };
+
+
+// Greets API endpoints
+export const fetchGreetings = () => api.get('/greets');
+export const addGreeting = (greet) => api.post('/greets', greet, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
+export const updateGreeting = (id, greet) => api.patch(`/greets/${id}`, greet, {
+  headers: { 'Content-Type': 'multipart/form-data' }
+});
+export const deleteGreeting = (id) => api.delete(`/greets/${id}`);
 
 
 //* User Registration
